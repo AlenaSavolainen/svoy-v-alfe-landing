@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свой в Альфе - Удаленная работа</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 50px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff4d4d;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        section {
+            padding: 40px 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #ffe6e6;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            animation: slideIn 1s ease-in-out;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ff4d4d;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #cc0000;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Удаленная работа в проекте "Свой в Альфе"</h1>
+        <p>Проверенный удаленный заработок с официальными выплатами</p>
+        <a href="#form" class="btn" id="scroll-btn">Оставить заявку</a>
+    </header>
+    
+    <section id="about">
+        <h2>О сути работы</h2>
+        <p>В проекте "Свой в Альфе" вы можете зарабатывать, помогая новым клиентам знакомиться с банковскими продуктами. Работа ведется удаленно, через интернет, без жесткого графика. Вам нужно только делиться полезной информацией и помогать людям находить выгодные решения.</p>
+    </section>
+    
+    <section id="benefits">
+        <h2>Наши преимущества</h2>
+        <ul>
+            <li>Свободный график</li>
+            <li>Официальные выплаты</li>
+            <li>Удаленная работа без вложений</li>
+        </ul>
+    </section>
+    
+    <section id="motivation">
+        <h2>Почему стоит попробовать?</h2>
+        <p>Этот проект создан для тех, кто хочет зарабатывать удаленно, не тратя время на поездки в офис. Он идеально подходит для студентов, мам в декрете, пенсионеров и всех, кто ищет гибкий доход.</p>
+    </section>
+    
+    <section id="form">
+        <h2>Оставьте заявку</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+            <button type="submit">Подать заявку</button>
+        </form>
+    </section>
+    
+    <section id="links">
+        <h2>Полезные ссылки</h2>
+        <ul>
+            <li><a href="#">Список открытых вакансий</a></li>
+            <li><a href="#">Ссылки на продукты банка</a></li>
+            <li><a href="#">Контакты для связи</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Свой в Альфе. Все права защищены.</p>
+    </footer>
+    
+    <script>
+        // Плавный скролл к форме
+        document.getElementById('scroll-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Валидация формы
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const phone = document.querySelector('input[name="phone"]').value;
+            if (name.trim() === '' || email.trim() === '' || phone.trim() === '') {
+                alert('Пожалуйста, заполните все поля!');
+            } else {
+                alert('Заявка отправлена!');
+            }
+        });
+    </script>
+</body>
+</html>
