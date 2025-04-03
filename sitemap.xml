@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://yourwebsite.com/</loc>
+        <loc>https://alenasavolainen.github.io/svoy-v-alfe-landing/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://yourwebsite.com/vacancies.html</loc>
-        <changefreq>weekly</changefreq>
+        <loc>https://alenasavolainen.github.io/svoy-v-alfe-landing/vakansies.html</loc>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://yourwebsite.com/products.html</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://alenasavolainen.github.io/svoy-v-alfe-landing/products.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://yourwebsite.com/contacts.html</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://alenasavolainen.github.io/svoy-v-alfe-landing/contacts.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>
