@@ -67,4 +67,22 @@ ul li {
         padding: 0;
         list-style-type: none;
     }
+    /* Центрирование всего содержимого */
+body {
+    text-align: center; /* Центрирует весь текст на странице */
+}
+
+/* Центрирование секций */
+header, section, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирует содержимое */
+    justify-content: center;
+}
+
+/* Центрирование кнопок */
+header .btn, .btn {
+    margin: 10px auto; /* Центрирует кнопки */
+}
+
 }
