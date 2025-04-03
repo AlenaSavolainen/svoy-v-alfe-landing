@@ -88,4 +88,8 @@ header .btn, .btn {
     color: red;
     font-weight: bold; /* (Необязательно) Сделает текст жирным */
 }
+    .green-text {
+    color: green;
+    font-weight: bold; /* (Необязательно) Сделает текст жирным */
+}
 }
