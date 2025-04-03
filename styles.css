@@ -84,5 +84,8 @@ header, section, footer {
 header .btn, .btn {
     margin: 10px auto; /* Центрирует кнопки */
 }
-
+    .red-text {
+    color: red;
+    font-weight: bold; /* (Необязательно) Сделает текст жирным */
+}
 }
