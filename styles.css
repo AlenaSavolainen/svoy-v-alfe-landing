@@ -1,0 +1,95 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Заголовки и текст */
+header h1, section h2, section h3 {
+    color: #333;
+}
+
+/* Кнопки */
+header .btn, .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header .btn:hover, .btn:hover {
+    background-color: #e00000;
+    transform: scale(1.1);
+}
+
+/* Структура и отступы */
+section {
+    padding: 40px 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+    /* Центрирование всего содержимого */
+body {
+    text-align: center; /* Центрирует весь текст на странице */
+}
+
+/* Центрирование секций */
+header, section, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирует содержимое */
+    justify-content: center;
+}
+
+/* Центрирование кнопок */
+header .btn, .btn {
+    margin: 10px auto; /* Центрирует кнопки */
+}
+    .red-text {
+    color: red;
+    font-weight: bold; /* (Необязательно) Сделает текст жирным */
+}
+    .green-text {
+    color: green;
+    font-weight: bold; /* (Необязательно) Сделает текст жирным */
+}
+}
